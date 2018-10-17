@@ -1,0 +1,15 @@
+# Ignore both root files and root directories...
+/*
+
+# ...except these folders (and eventually their content) down here...
+!/build
+!/docs
+!/.git
+!/include
+!/tests
+
+# ...and except these files down here...
+!/CMakeLists.txt
+!/Doxyfile
+!/.gitignore
+!/README.md
