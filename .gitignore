@@ -6,6 +6,7 @@
 !/docs
 !/.git
 !/include
+!/scripts
 !/tests
 
 # ...and except these files down here...
