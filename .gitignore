@@ -6,6 +6,7 @@
 !/tests
 
 # ...and except these files down here...
+!/BranchHinting.hpp
 !/CMakeLists.txt
 !/Doxyfile
 !/LICENSE
