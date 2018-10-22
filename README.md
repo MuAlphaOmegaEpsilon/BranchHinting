@@ -11,6 +11,7 @@ The desired behaviour is obtained through the use of the [__builtin_expect](http
 - [Dependencies](#Dependencies)
 - [Source code integration](#Source-code-integration)
 - [Disabling macros](#Disabling-macros)
+- [Testing](#Testing)
 - [CMake support](#CMake-support)
 - [Doxygen support](#Doxygen-support)
 - [Compilers supported](#Compilers-supported)
@@ -26,7 +27,7 @@ $ git clone https://github.com/MuAlphaOmegaEpsilon/BranchHinting
 ```
 
 ## Dependencies
-This project consists of an header-only file with no include dependencies.
+This project consists of a header-only file with no include dependencies.
 
 ## Source code integration
 Give a look at how to change the source code changes when you want to integrate the macros of this library:
@@ -70,15 +71,17 @@ The hints to the compiler can be disabled just by defining a single macro.
 #define DISABLE_BRANCH_HINTING
 ```
 
+## Testing
+Just run the script contained in the repository. After testing has ended the script will automatically clean all the files created.
+```bash
+./runTests.sh
+```
+
 ## CMake support
 You only need to add the two commands below to your *CMakeLists.txt* file in order to use this macro library:
 ```cmake
 ADD_SUBDIRECTORY (${PROJECT_SOURCE_DIR}/path_to_BranchHinting/)	
 TARGET_LINK_LIBRARIES (your_executable PUBLIC BranchHinting)	
-```
-After this it's just a matter of including the library:
-```cpp
-#include <BranchHinting.hpp> // C++ Macro definitions for easy Static Branch Prediction.
 ```
 
 ## Doxygen support
@@ -91,7 +94,7 @@ doxygen
 GCC, Clang and ICC correctly support the macros used to hint about likely taken branches; MSVC on the other hand doesn't support at all such features, and encourages the use of PGO instead.
 
 *In case you are using this library as part of a cross-platform project that will also run on Windows through MSVC:* <br>
-*BranchHinting* is automatically disabled when using the MSVC compiler, and you simply won't get the bonuses/maluses that comes from using it, apart from this everything will work fine.
+*BranchHinting* is automatically disabled when using the MSVC compiler, and you simply won't get the bonuses/maluses that comes from using it; apart from this everything will work fine.
 
 ## PGO vs SBP
 **Profile Guided Optimization** is a great tool, there's no doubt about it, but it has its pros and cons as well as **Static Branch Prediction**.
