@@ -8,5 +8,8 @@
 # ...and except these files down here...
 !/CMakeLists.txt
 !/Doxyfile
-!/.gitignore
+!/LICENSE
 !/README.md
+!/runTests.sh
+!/travis.yml
+!/.gitignore
