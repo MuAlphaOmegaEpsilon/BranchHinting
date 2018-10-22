@@ -13,5 +13,5 @@
 !/LICENSE
 !/README.md
 !/runTests.sh
-!/travis.yml
 !/.gitignore
+!/.travis.yml
