@@ -1,4 +1,4 @@
-# <img src="./images/BranchHinting.png" height="100" alt="BranchHinting"> 
+# [<img src="./images/BranchHinting.png" height="100" alt="BranchHinting">]()
 C++ Macro definitions for easy Static Branch Prediction.
 
 *BranchHinting* is a minimalistic macro library used to perform [Static Branch Prediction](https://en.wikipedia.org/wiki/Branch_predictor#Static_branch_prediction), a technique used to hint the compiler about the likeliness of one or more branching conditions, so that the code can be streamlined into being more I-cache friendly. <br>
