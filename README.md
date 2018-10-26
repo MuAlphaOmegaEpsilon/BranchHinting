@@ -6,6 +6,10 @@ The desired behaviour is obtained through the use of the [__builtin_expect](http
 
 *Be aware that using this technique might give better or worse performance based on the quality of the hinting, so use this tool wisely.*
 
+| Platform | Build Status |
+|:--------:|:------------:|
+| Linux    | [![Build Status](https://travis-ci.com/MuAlphaOmegaEpsilon/BranchHinting.svg?branch=master)](https://travis-ci.com/MuAlphaOmegaEpsilon/BranchHinting) |
+
 ## Table of contents
 - [Download](#Download)
 - [Dependencies](#Dependencies)
